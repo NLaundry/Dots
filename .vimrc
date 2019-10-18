@@ -1,4 +1,3 @@
-" = VIM Setup = 
 "____    ____  __  .___  ___.         _______. _______ .___________. __    __  .______   
 "\   \  /   / |  | |   \/   |        /       ||   ____||           ||  |  |  | |   _  \  
 " \   \/   /  |  | |  \  /  |       |   (----`|  |__   `---|  |----`|  |  |  | |  |_)  | 
@@ -10,14 +9,15 @@
 " == Plugins == {
   call plug#begin('~/.vim/plugged')
   Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-  Plug 'vimwiki/vimwiki'
+  Plug 'vimwiki/vimwiki' "Create a repository of all my knowledge 
+  Plug 'junegunn/goyo.vim' "Turns off all visual junk for clean writing
   Plug 'scrooloose/nerdtree' "visual directory hiearchy
   Plug 'vim-airline/vim-airline' "airline give you an awesome status bar
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'tpope/vim-fugitive' "Git plugi 
+  Plug 'tpope/vim-fugitive' "Git plugin
   Plug 'mkitt/tabline.vim' "customization for the buffer/tabline above
   Plug 'yggdroot/indentline' "Gives visual representation of indentation levels
-  Plug 'tpope/vim-surround' "Wraps the selected text in quotations/parens
+  "Plug 'tpope/vim-surround' "Wraps the selected text in quotations/parens
   Plug 'scrooloose/nerdcommenter' "Commenting by visual selection
   Plug 'jiangmiao/auto-pairs' "creates 2 quotes or parens whenever you type one
   " == fuzzyfinder for files == {
@@ -26,11 +26,15 @@
   " }
   "== Syntax Highlight and Intellisense == {
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'leafgarland/typescript-vim'
-    Plug 'othree/yajs.vim'
+    "Plug 'leafgarland/typescript-vim'
+    "Plug 'othree/yajs.vim'
   " }
   Plug 'othree/html5.vim' "For syntax highlighting on non native html components
   Plug 'ryanoasis/vim-devicons' "devicons must be loaded last
+  "Plug 'udalov/kotlin-vim' " kotlin detection for vim
+  Plug 'fwcd/kotlin-language-server' " kotlin lsp
+  Plug 'natebosch/dart_language_server' "language server for dart
+  Plug 'MaskRay/ccls' "Language server for c, c++
   call plug#end()
 " }
 
@@ -43,6 +47,8 @@
   set nowrap
   set nocursorline
   set encoding=UTF-8 
+  set relativenumber
+  
 " }
 
 " == Latex Viewer == {
@@ -56,6 +62,10 @@
 
 " == Navigation == {
   inoremap jj <ESC>
+  map <C-Left> :tabp<CR>
+  map <C-Right> :tabn<CR>
+  map <C-j> :bp<CR>
+  map <C-k> :bn<CR>
 "}
 
 " == Popmenu == {
@@ -66,10 +76,6 @@
 
 " == Nerdtree settings and mappings == {
   map <C-n> :NERDTreeToggle<CR>
-  map <C-Left> :bp<CR>
-  map <C-Right> :bn<CR>
-  map <C-j> :bp<CR>
-  map <C-k> :bn<CR>
   let NERDTreeMinimalUI=1
 " }
 
@@ -101,6 +107,7 @@
   inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
   "Select auto completion
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tslint', 'coc-prettier', 'coc-angular' ]
 " }
 
 " == fuzzyfinder setting == {
