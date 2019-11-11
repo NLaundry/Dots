@@ -8,7 +8,7 @@
 
 " == Plugins == {
   call plug#begin('~/.vim/plugged')
-  Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+  "Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
   Plug 'vimwiki/vimwiki' "Create a repository of all my knowledge 
   Plug 'junegunn/goyo.vim' "Turns off all visual junk for clean writing
   Plug 'scrooloose/nerdtree' "visual directory hiearchy
@@ -18,8 +18,8 @@
   Plug 'mkitt/tabline.vim' "customization for the buffer/tabline above
   Plug 'yggdroot/indentline' "Gives visual representation of indentation levels
   "Plug 'tpope/vim-surround' "Wraps the selected text in quotations/parens
-  Plug 'scrooloose/nerdcommenter' "Commenting by visual selection
-  Plug 'jiangmiao/auto-pairs' "creates 2 quotes or parens whenever you type one
+  "Plug 'scrooloose/nerdcommenter' "Commenting by visual selection
+  "Plug 'jiangmiao/auto-pairs' "creates 2 quotes or parens whenever you type one
   " == fuzzyfinder for files == {
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
@@ -30,25 +30,25 @@
     "Plug 'othree/yajs.vim'
   " }
   Plug 'othree/html5.vim' "For syntax highlighting on non native html components
-  Plug 'ryanoasis/vim-devicons' "devicons must be loaded last
   "Plug 'udalov/kotlin-vim' " kotlin detection for vim
   Plug 'fwcd/kotlin-language-server' " kotlin lsp
   Plug 'natebosch/dart_language_server' "language server for dart
   Plug 'MaskRay/ccls' "Language server for c, c++
+  Plug 'ryanoasis/vim-devicons' "devicons must be loaded last
+  Plug 'maxmellon/vim-jsx-pretty'
   call plug#end()
 " }
 
 " == UI == {
   syntax on
   set number
-  set tabstop=2
+  set tabstop=4
   set expandtab
-  set sw=2
+  set sw=4
   set nowrap
   set nocursorline
   set encoding=UTF-8 
   set relativenumber
-  
 " }
 
 " == Latex Viewer == {
@@ -58,15 +58,28 @@
 " == VimWiki == {
   set nocompatible
   filetype plugin on
+ " let g:vimwiki_list = [{'path': '~/vimwiki/',
+ "                     \ 'syntax': 'markdown', 'ext': '.md'}]
 " }
 
 " == Navigation == {
   inoremap jj <ESC>
-  map <C-Left> :tabp<CR>
-  map <C-Right> :tabn<CR>
   map <C-j> :bp<CR>
-  map <C-k> :bn<CR>
+  map <C-k> :bn<CR> 
+  "Adds a new line at current cursor position without exiting normal mode
+  nnoremap <S-n> :exe "normal i".nr2char(10)<CR> 
+  "These are training maps. Forces me not to use arrow keys or backspace
+  noremap <Up> <Nop>
+  noremap <Down> <Nop>
+  noremap <Left> <Nop>
+  noremap <Right> <Nop>
+  
+  inoremap <Up> <Nop>
+  inoremap <Down> <Nop>
+  inoremap <Left> <Nop>
+  inoremap <Right> <Nop>
 "}
+"
 
 " == Popmenu == {
   "Changes the background colour of popmenus
@@ -77,6 +90,7 @@
 " == Nerdtree settings and mappings == {
   map <C-n> :NERDTreeToggle<CR>
   let NERDTreeMinimalUI=1
+  let g:NERDTreeQuitOnOpen=1 "NerdTree is kind've annoying if left open.
 " }
 
 " == Airline Settings == {
@@ -108,7 +122,9 @@
   "Select auto completion
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
   let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tslint', 'coc-prettier', 'coc-angular' ]
-" }
+  vmap <leader>f <Plug>(coc-format-selected)
+  nmap <leader>f <Plug>(coc-format-selected)
+  " }
 
 " == fuzzyfinder setting == {
   map <C-p> :FZF<CR>
