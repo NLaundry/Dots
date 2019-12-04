@@ -18,25 +18,28 @@
   Plug 'mkitt/tabline.vim' "customization for the buffer/tabline above
   Plug 'yggdroot/indentline' "Gives visual representation of indentation levels
   "Plug 'tpope/vim-surround' "Wraps the selected text in quotations/parens
-  "Plug 'scrooloose/nerdcommenter' "Commenting by visual selection
-  "Plug 'jiangmiao/auto-pairs' "creates 2 quotes or parens whenever you type one
   " == fuzzyfinder for files == {
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
   " }
   "== Syntax Highlight and Intellisense == {
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    "Plug 'leafgarland/typescript-vim'
-    "Plug 'othree/yajs.vim'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'peitalin/vim-jsx-typescript'
+    Plug 'othree/html5.vim' "For syntax highlighting on non native html components
+    "Plug 'udalov/kotlin-vim' " kotlin detection for vim
+    Plug 'fwcd/kotlin-language-server' " kotlin lsp
+    Plug 'natebosch/dart_language_server' "language server for dart
+    Plug 'MaskRay/ccls' "Language server for c, c++
   " }
-  Plug 'othree/html5.vim' "For syntax highlighting on non native html components
-  "Plug 'udalov/kotlin-vim' " kotlin detection for vim
-  Plug 'fwcd/kotlin-language-server' " kotlin lsp
-  Plug 'natebosch/dart_language_server' "language server for dart
-  Plug 'MaskRay/ccls' "Language server for c, c++
   Plug 'ryanoasis/vim-devicons' "devicons must be loaded last
-  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'liuchengxu/vista.vim'
   call plug#end()
+" }
+
+" == Colour Scheme == {
+  autocmd ColorScheme janah highlight Normal ctermbg=235
+  colorscheme janah
 " }
 
 " == UI == {
@@ -68,16 +71,6 @@
   map <C-k> :bn<CR> 
   "Adds a new line at current cursor position without exiting normal mode
   nnoremap <S-n> :exe "normal i".nr2char(10)<CR> 
-  "These are training maps. Forces me not to use arrow keys or backspace
-  noremap <Up> <Nop>
-  noremap <Down> <Nop>
-  noremap <Left> <Nop>
-  noremap <Right> <Nop>
-  
-  inoremap <Up> <Nop>
-  inoremap <Down> <Nop>
-  inoremap <Left> <Nop>
-  inoremap <Right> <Nop>
 "}
 "
 
@@ -121,13 +114,27 @@
   inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
   "Select auto completion
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-  let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tslint', 'coc-prettier', 'coc-angular' ]
+  let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tslint', 'coc-angular' ]
   vmap <leader>f <Plug>(coc-format-selected)
   nmap <leader>f <Plug>(coc-format-selected)
   " }
 
 " == fuzzyfinder setting == {
   map <C-p> :FZF<CR>
+" }
+" == Vista.vim settings == {
+    function! NearestMethodOrFunction() abort
+        return get(b:, 'vista_nearest_method_or_function', '')
+    endfunction
+
+    set statusline+=%{NearestMethodOrFunction()}
+
+    "By default vista.vim never run if you don't call it explicitly.
+    "
+    " If you want to show the nearest function in your statusline
+    "automatically,
+    " you can add the following line to your vimrc 
+    autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
 " }
 
 " == Indent Line == {
