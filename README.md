@@ -35,6 +35,8 @@ Mandatory Features
     * Alacritty for that sweet sweet gpu acceleration
     * powerline fonts
     * nerd fonts
+    * bat: cat but with style
+    * tig: git with an ncurses interface
 2. Vim config is largely self contained.
     * Coc is essential for useful autocompletions and intellisense
     * Plug as plugin manager
