@@ -27,6 +27,17 @@ Theme:
     Powerlevel9k: git clone https://github.com/bhilburn/powerlevek9k.git ~/.oh-my-zsh/custom/themes/powerlevek9k
 
 ## Setup for New machine
+### Adjusting for HiDPI
+* in your .Xresources file adjust Xft.dpi according to your display
+    * Default for me on Huawei Matebook X Pro was 96, now set to 196
+
+### Installing Firefox developer edition
+* Download firefox developer edition here
+    * https://www.mozilla.org/en-US/firefox/developer/
+* Extract using: tar -xvf firefox-*.tar.bz2
+* Move the extracted files using: mv /home/{USERNAME}/Downloads/firefox /opt
+* Create a link for the binary file: ln -s /opt/firefox/firefox /usr/local/bin/firefox
+
 
 Mandatory Features
 -----------------
@@ -47,7 +58,7 @@ Mandatory Features
     * This is going to take some planning
 
 Notes
-----
+-----
 * With ZSH and oh-my-zsh ensure to use antigen properly
 * Learn your package manager(s) and use them properly
 * Fix indentation in vimrc and clean out unnecessary pluginsA
