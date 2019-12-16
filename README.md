@@ -1,4 +1,4 @@
-# config
+#config
 A collection of configuration files and instructions.
 
 ## If you're unfortunate enough to use windows
@@ -37,6 +37,34 @@ Theme:
 * Extract using: tar -xvf firefox-*.tar.bz2
 * Move the extracted files using: mv /home/{USERNAME}/Downloads/firefox /opt
 * Create a link for the binary file: ln -s /opt/firefox/firefox /usr/local/bin/firefox
+* Firefox with I3: popups must be set to open in floating mode
+    * in config file: for_window [window_role="About"] floating enable
+
+### Audio on Manjaro
+* Install pulseaudio and pulse-audio via pacman
+* Firefox requires pulseaudio
+
+### I3 
+* Installing i3-gaps-rounded:
+    * Uninstall manjaro-i3
+    * install i3-gaps-rounded from the aur
+    * set border_radius 20 in i3 config
+
+### Compton
+* set inactive windows to dim
+
+### Alacritty
+* in .config/alacritty/alacritty.yml
+* grab config files from git repo
+
+### ZSH
+1. Installing zsh: sudo pacman -S zsh
+2. Installing oh-my-zsh:
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+3. Installing Antigen for zsh plugin management:
+    curl -L git.io/antigen > antigen.zsh
+4. I've moved antigen.zsh into .config/antigen
+5. .zshrc sources the antigen.zsh as well as theme.zsh which styles the prompt
 
 
 Mandatory Features
