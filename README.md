@@ -56,6 +56,7 @@ Theme:
 ### Alacritty
 * in .config/alacritty/alacritty.yml
 * grab config files from git repo
+* Current theme: molokai pro
 
 ### ZSH
 1. Installing zsh: sudo pacman -S zsh
