@@ -2,7 +2,7 @@
     "Token": "MzYxNzA4NzY3NjUxMjk5MzI5.XgFhqQ.H6GSuS2Jg8-yyNNFYMXpS0i6GgQ",
     "Autocomplete": true,
     "Times": 0,
-    "UseRandomUserColors": true,
+    "UseRandomUserColors": false,
     "FocusChannelAfterGuildSelection": true,
     "FocusMessageInputAfterChannelSelection": true,
     "ShowUserContainer": false,
