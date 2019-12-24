@@ -1,0 +1,23 @@
+{
+    "Token": "MzYxNzA4NzY3NjUxMjk5MzI5.XgFhqQ.H6GSuS2Jg8-yyNNFYMXpS0i6GgQ",
+    "Autocomplete": true,
+    "Times": 0,
+    "UseRandomUserColors": false,
+    "FocusChannelAfterGuildSelection": true,
+    "FocusMessageInputAfterChannelSelection": true,
+    "ShowUserContainer": true,
+    "UseFixedLayout": false,
+    "FixedSizeLeft": 12,
+    "FixedSizeRight": 12,
+    "OnTypeInListBehaviour": 1,
+    "MouseEnabled": true,
+    "ShortenLinks": false,
+    "ShortenerPort": 63212,
+    "DesktopNotifications": true,
+    "ShowPlaceholderForBlockedMessages": true,
+    "ShowUpdateNotifications": true,
+    "DontShowUpdateNotificationFor": "",
+    "Accounts": null,
+    "IndicateChannelAccessRestriction": false,
+    "ShowBottomBar": true
+}

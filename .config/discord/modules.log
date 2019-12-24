@@ -1,0 +1,123 @@
+[Modules] Modules initializing
+[Modules] Distribution: remote
+[Modules] Host updates: enabled
+[Modules] Module updates: enabled
+[Modules] Module install path: /home/nathan/.config/discord/0.0.9/modules
+[Modules] Module installed file path: /home/nathan/.config/discord/0.0.9/modules/installed.json
+[Modules] Module download path: /home/nathan/.config/discord/0.0.9/modules/pending
+[Modules] Bootstrapping...
+[Modules] Installing discord_desktop_core@0 from /opt/discord/resources/bootstrap/discord_desktop_core.zip
+[Modules] Failed installing discord_desktop_core@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_desktop_core.zip'
+[Modules] Installing discord_erlpack@0 from /opt/discord/resources/bootstrap/discord_erlpack.zip
+[Modules] Failed installing discord_erlpack@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_erlpack.zip'
+[Modules] Installing discord_spellcheck@0 from /opt/discord/resources/bootstrap/discord_spellcheck.zip
+[Modules] Failed installing discord_spellcheck@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_spellcheck.zip'
+[Modules] Installing discord_utils@0 from /opt/discord/resources/bootstrap/discord_utils.zip
+[Modules] Failed installing discord_utils@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_utils.zip'
+[Modules] Installing discord_voice@0 from /opt/discord/resources/bootstrap/discord_voice.zip
+[Modules] Failed installing discord_voice@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_voice.zip'
+[Modules] Finished module installations. [success: 0] [failure: 5]
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discordapp.com/api/modules/stable/versions.json
+[Modules] Module update available: discord_desktop_core@6 [installed: 0]
+[Modules] Module update available: discord_erlpack@2 [installed: 0]
+[Modules] Module update available: discord_spellcheck@2 [installed: 0]
+[Modules] Module update available: discord_utils@2 [installed: 0]
+[Modules] Module update available: discord_voice@10 [installed: 0]
+[Modules] Fetching discord_desktop_core@6 from https://discordapp.com/api/modules/stable/discord_desktop_core/6
+[Modules] Streaming discord_desktop_core@6 [1637724 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_desktop_core-6.zip
+[Modules] Fetching discord_erlpack@2 from https://discordapp.com/api/modules/stable/discord_erlpack/2
+[Modules] Streaming discord_erlpack@2 [1867421 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_erlpack-2.zip
+[Modules] Fetching discord_spellcheck@2 from https://discordapp.com/api/modules/stable/discord_spellcheck/2
+[Modules] Streaming discord_spellcheck@2 [10207921 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_spellcheck-2.zip
+[Modules] Fetching discord_utils@2 from https://discordapp.com/api/modules/stable/discord_utils/2
+[Modules] Streaming discord_utils@2 [3110815 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_utils-2.zip
+[Modules] Fetching discord_voice@10 from https://discordapp.com/api/modules/stable/discord_voice/10
+[Modules] Streaming discord_voice@10 [11578131 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_voice-10.zip
+[Modules] Finished module downloads. [success: 5] [failure: 0]
+[Modules] Relaunching to install module updates...
+[Modules] Modules initializing
+[Modules] Distribution: remote
+[Modules] Host updates: enabled
+[Modules] Module updates: enabled
+[Modules] Module install path: /home/nathan/.config/discord/0.0.9/modules
+[Modules] Module installed file path: /home/nathan/.config/discord/0.0.9/modules/installed.json
+[Modules] Module download path: /home/nathan/.config/discord/0.0.9/modules/pending
+[Modules] Installing updates...
+[Modules] Installing discord_desktop_core@6 from /home/nathan/.config/discord/0.0.9/modules/pending/discord_desktop_core-6.zip
+[Modules] Installing discord_erlpack@2 from /home/nathan/.config/discord/0.0.9/modules/pending/discord_erlpack-2.zip
+[Modules] Installing discord_spellcheck@2 from /home/nathan/.config/discord/0.0.9/modules/pending/discord_spellcheck-2.zip
+[Modules] Installing discord_utils@2 from /home/nathan/.config/discord/0.0.9/modules/pending/discord_utils-2.zip
+[Modules] Installing discord_voice@10 from /home/nathan/.config/discord/0.0.9/modules/pending/discord_voice-10.zip
+[Modules] Finished module installations. [success: 5] [failure: 0]
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discordapp.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Starting to install discord_krisp...
+[Modules] Fetching discord_krisp@0 from https://discordapp.com/api/modules/stable/discord_krisp/0
+[Modules] Starting to install discord_game_utils...
+[Modules] Streaming discord_krisp@0 [251 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_krisp-0.zip
+[Modules] Waiting 1000ms before next download.
+[Modules] Starting to install discord_rpc...
+[Modules] Fetching discord_game_utils@3 from https://discordapp.com/api/modules/stable/discord_game_utils/3
+[Modules] Streaming discord_game_utils@3 [2628086 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_game_utils-3.zip
+[Modules] Fetching discord_rpc@3 from https://discordapp.com/api/modules/stable/discord_rpc/3
+[Modules] Installing discord_game_utils@3 from /home/nathan/.config/discord/0.0.9/modules/pending/discord_game_utils-3.zip
+[Modules] Streaming discord_rpc@3 [167049 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_rpc-3.zip
+[Modules] Finished module downloads. [success: 2] [failure: 1]
+[Modules] Installing discord_rpc@3 from /home/nathan/.config/discord/0.0.9/modules/pending/discord_rpc-3.zip
+[Modules] Finished module installations. [success: 2] [failure: 0]
+[Modules] Modules initializing
+[Modules] Distribution: remote
+[Modules] Host updates: enabled
+[Modules] Module updates: enabled
+[Modules] Module install path: /home/nathan/.config/discord/0.0.9/modules
+[Modules] Module installed file path: /home/nathan/.config/discord/0.0.9/modules/installed.json
+[Modules] Module download path: /home/nathan/.config/discord/0.0.9/modules/pending
+[Modules] No updates to install
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discordapp.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Starting to install discord_krisp...
+[Modules] Fetching discord_krisp@0 from https://discordapp.com/api/modules/stable/discord_krisp/0
+[Modules] Streaming discord_krisp@0 [251 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_krisp-0.zip
+[Modules] Finished module downloads. [success: 0] [failure: 1]
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discordapp.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Modules initializing
+[Modules] Distribution: remote
+[Modules] Host updates: enabled
+[Modules] Module updates: enabled
+[Modules] Module install path: /home/nathan/.config/discord/0.0.9/modules
+[Modules] Module installed file path: /home/nathan/.config/discord/0.0.9/modules/installed.json
+[Modules] Module download path: /home/nathan/.config/discord/0.0.9/modules/pending
+[Modules] No updates to install
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discordapp.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Modules initializing
+[Modules] Distribution: remote
+[Modules] Host updates: enabled
+[Modules] Module updates: enabled
+[Modules] Module install path: /home/nathan/.config/discord/0.0.9/modules
+[Modules] Module installed file path: /home/nathan/.config/discord/0.0.9/modules/installed.json
+[Modules] Module download path: /home/nathan/.config/discord/0.0.9/modules/pending
+[Modules] No updates to install
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discordapp.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Starting to install discord_krisp...
+[Modules] Fetching discord_krisp@0 from https://discordapp.com/api/modules/stable/discord_krisp/0
+[Modules] Streaming discord_krisp@0 [251 bytes] to /home/nathan/.config/discord/0.0.9/modules/pending/discord_krisp-0.zip
+[Modules] Finished module downloads. [success: 0] [failure: 1]
+[Modules] Checking for host updates.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discordapp.com/api/modules/stable/versions.json
+[Modules] No module updates available.

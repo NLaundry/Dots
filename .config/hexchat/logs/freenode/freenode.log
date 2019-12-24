@@ -1,0 +1,89 @@
+**** BEGIN LOGGING AT Thu Dec 19 22:45:19 2019
+
+Dec 19 22:45:19 *	*** Looking up your hostname...
+Dec 19 22:45:19 *	*** Checking Ident
+Dec 19 22:45:19 *	*** Couldn't look up your hostname
+Dec 19 22:45:29 *	*** No Ident response
+Dec 19 22:45:29 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Dec 19 22:45:29 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+Dec 19 22:45:29 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+**** ENDING LOGGING AT Thu Dec 19 22:45:29 2019
+
+**** BEGIN LOGGING AT Thu Dec 19 22:45:29 2019
+
+Dec 19 22:45:29 *	Welcome to the freenode Internet Relay Chat Network manjaroi3
+Dec 19 22:45:29 *	Your host is moon.freenode.net[173.230.128.213/6667], running version ircd-seven-1.1.9
+Dec 19 22:45:29 *	This server was created Thu Dec 19 2019 at 20:29:30 UTC
+Dec 19 22:45:29 *	moon.freenode.net ircd-seven-1.1.9 DOQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+Dec 19 22:45:29 *	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+Dec 19 22:45:29 *	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 SAFELIST ELIST=CTU CPRIVMSG :are supported by this server
+Dec 19 22:45:29 *	CNOTICE WHOX ETRACE KNOCK :are supported by this server
+Dec 19 22:45:29 *	There are 101 users and 84767 invisible on 29 servers
+Dec 19 22:45:29 *	34 :IRC Operators online
+Dec 19 22:45:29 *	48 :unknown connection(s)
+Dec 19 22:45:29 *	50530 :channels formed
+Dec 19 22:45:29 *	I have 1751 clients and 1 servers
+Dec 19 22:45:29 *	1751 1752 :Current local users 1751, max 1752
+Dec 19 22:45:29 *	84868 85677 :Current global users 84868, max 85677
+Dec 19 22:45:29 *	Highest connection count: 1753 (1752 clients) (8077 connections received)
+Dec 19 22:45:29 *	- moon.freenode.net Message of the Day - 
+Dec 19 22:45:29 *	- Welcome to moon.freenode.net in Atlanta, GA, US! Thanks to
+Dec 19 22:45:29 *	- Linode for sponsoring this server!
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- MOON, ELIZABETH (1945-) Born in South Texas, USA, 
+Dec 19 22:45:29 *	- Elizabeth Moon is an American science fiction and fantasy
+Dec 19 22:45:29 *	- author with over 20 published works. Her novel The Speed 
+Dec 19 22:45:29 *	- Of Dark received the Arthur C. Clarke and Nebula Awards in 2003
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- Welcome to freenode - supporting the free and open source
+Dec 19 22:45:29 *	- software communities since 1998.
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- By connecting to freenode you indicate that you have read and
+Dec 19 22:45:29 *	- accept our policies and guidelines as set out on https://freenode.net
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- In the event that you observe behaviour that contravenes our policies,
+Dec 19 22:45:29 *	- please notify a volunteer staff member via private message, or send us an
+Dec 19 22:45:29 *	- e-mail to complaints@freenode.net -- we will do our best to address the
+Dec 19 22:45:29 *	- situation within a reasonable period of time, and we may request further
+Dec 19 22:45:29 *	- information or, as appropriate, involve other parties such as channel operators 
+Dec 19 22:45:29 *	- Group Contacts representing an on-topic group.
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- freenode runs an open proxy scanner.
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- If you are looking for assistance, you may be able to find a list of 
+Dec 19 22:45:29 *	- volunteer staff on '/stats p' (shows only on-call staff) or by joining 
+Dec 19 22:45:29 *	- #freenode and using the '/who freenode/staff/*' command. You may message
+Dec 19 22:45:29 *	- any of us at any time. Please note that freenode predominantly provides 
+Dec 19 22:45:29 *	- assistance via private message, and while we have a network channel the 
+Dec 19 22:45:29 *	- primary venue for support requests is via private message to a member 
+Dec 19 22:45:29 *	- of the volunteer staff team.
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- From time to time, volunteer staff may send server-wide notices relating to
+Dec 19 22:45:29 *	- the project, or the communities that we host. The majority of such notices
+Dec 19 22:45:29 *	- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
+Dec 19 22:45:29 *	- do not miss them. Important messages relating to the freenode project, including
+Dec 19 22:45:29 *	- notices of upcoming maintenance and other scheduled downtime will be issued as
+Dec 19 22:45:29 *	- global notices.
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- Representing an on-topic project? Don't forget to register, more information
+Dec 19 22:45:29 *	- can be found on the https://freenode.net website under "Group Registration".
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- Thank you also to our server sponsors for the sustained support in keeping the
+Dec 19 22:45:29 *	- network going for close to two decades.
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- Thank you to all of our attendees, sponsors, speakers, exhibitors, helpers,
+Dec 19 22:45:29 *	- and everyone else who made this year's freenode #live conference amazing.
+Dec 19 22:45:29 *	- https://freenode.net/news/live-2018
+Dec 19 22:45:29 *	-  
+Dec 19 22:45:29 *	- Thank you for using freenode!
+Dec 19 22:45:29 *	End of /MOTD command.
+Dec 19 22:45:29 *	manjaroi3 sets mode +i on manjaroi3
+Dec 19 22:45:29 -NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+Dec 19 22:45:30 -freenode-connect-	Welcome to freenode. To protect the network all new connections will be scanned for vulnerabilities. This will not harm your computer, and vulnerable hosts will be notified.
+Dec 19 22:45:30 *	Received a CTCP VERSION from freenode-connect
+Dec 19 22:45:35 *	#manjaro #manjaro-unregistered :Forwarding to another channel
+Dec 19 22:46:13 Perl interface unloaded
+Dec 19 22:46:13 Checksum plugin unloaded
+Dec 19 22:46:13 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Thu Dec 19 22:46:13 2019
+

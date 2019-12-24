@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "coc-angular": ">=0.900.4",
+    "coc-json": ">=1.2.4",
+    "coc-tslint": ">=1.0.17",
+    "coc-tsserver": ">=1.4.9"
+  }
+}

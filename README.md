@@ -27,6 +27,7 @@ Theme:
     Powerlevel9k: git clone https://github.com/bhilburn/powerlevek9k.git ~/.oh-my-zsh/custom/themes/powerlevek9k
 
 ## Setup for New machine
+
 ### Adjusting for HiDPI
 * in your .Xresources file adjust Xft.dpi according to your display
     * Default for me on Huawei Matebook X Pro was 96, now set to 196
@@ -49,15 +50,48 @@ Theme:
     * Uninstall manjaro-i3
     * install i3-gaps-rounded from the aur
     * set border_radius 20 in i3 config
+### Rofi setup
+* Install: *sudo pacman -S rofi
 
+### Setting up polybar
+* font awesome
+    * install fonts: sudo pacman -S ttf-font-awesome
+* Polybar is configured to run on startup with i3
+* Polybar currently displays:
+    * CPU usage
+    * Ram usage
+    * Wifi with clickable connection manager
+    * Active window
+    * I3 workspaces
+    * brightness with on scroll changes
+    * volume with pavucontrol (wanna change this cause its ugly)
+    * Battery display
+    * date
+### Installing flameshot for screenshots
+* sudo pacman -S flameshot
+    * In the i3 config this is mapped to print screen
 ### Compton
 * set inactive windows to dim
-
+### GTK theme
+* install equilux: git clone https://aur.archlinux.org/equilux-theme.git
+* apply Equilux in the gtk-3.0 settings.ini
 ### Alacritty
 * in .config/alacritty/alacritty.yml
 * grab config files from git repo
 * Current theme: molokai pro
-
+### Music: mopidy + spotify + ncmpcpp
+* mopidy: sudo pacman -S mopidy
+* spotify plugin: yay mopidy-spotify
+* ncmpcpp: sudo pacman -S ncmpcpp
+* configuring mopidy and spotify:
+    * add username + password in ~/.config/mopidy/mopidy.conf
+    * validate mopidy via spotify (this can be done on the mopidy plugins wiki)
+    * insert the client id and secret into the config file
+* configure ~/.ncmpcpp/config
+    * mpd_host "localhost"
+    * mpd_port "6600"
+* Current setup:
+    * alias music="mopidy &; disown; ncmpcpp;"
 ### ZSH
 1. Installing zsh: sudo pacman -S zsh
 2. Installing oh-my-zsh:
@@ -66,26 +100,9 @@ Theme:
     curl -L git.io/antigen > antigen.zsh
 4. I've moved antigen.zsh into .config/antigen
 5. .zshrc sources the antigen.zsh as well as theme.zsh which styles the prompt
-
-
-Mandatory Features
------------------
-1. Terminal setup
-    * Use ZSH with oh-my-zsh
-    * Alacritty for that sweet sweet gpu acceleration
-    * powerline fonts
-    * nerd fonts
-    * bat: cat but with style
-    * tig: git with an ncurses interface
-2. Vim config is largely self contained.
-    * Coc is essential for useful autocompletions and intellisense
-    * Plug as plugin manager
-3. Tmux
-    * If I move to a tiling window manager this may be largely unnecessary
-    * The config is pretty minimal and in git repo
-4. I3
-    * This is going to take some planning
-
+### useful programs
+* Zathura for pdf and epub viewing:
+    * sudo pacman -S zathura zathura-pdf-mupdf
 Notes
 -----
 * With ZSH and oh-my-zsh ensure to use antigen properly

@@ -1,0 +1,4 @@
+T 1576813535 19*	Now talking on 22#manjaro-talk
+T 1576813535 22*	Topic for 22#manjaro-talk is: evilshit
+T 1576813535 22*	Topic for 22#manjaro-talk set by 26jum-jum!~jum-jum@pD9EAB9C8.dip0.t-ipconnect.de (24Thu Dec 19 10:38:21 2019)
+T 1576813573 FiSHLiM plugin unloaded
