@@ -105,6 +105,7 @@ Theme:
     * sudo pacman -S zathura zathura-pdf-mupdf
 Notes
 -----
+* npm EACCESS: try --unsafe-perm=true --allow-root
 * With ZSH and oh-my-zsh ensure to use antigen properly
 * Learn your package manager(s) and use them properly
 * Fix indentation in vimrc and clean out unnecessary pluginsA

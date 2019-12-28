@@ -102,7 +102,7 @@ endif
 " == Plugin Dependent Settings == 
 
 " == Colour Scheme == {
-    color janah 
+    color janah   
 " }
 
 
