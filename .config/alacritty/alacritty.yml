@@ -18,7 +18,7 @@ colors:
   # Default colors
   primary:
     background: '0x2D2A2E'
-    foreground: '0xFCFCFA'
+    foreground: '0xEFEFEF'
 
   # Normal colors
   normal:
@@ -29,7 +29,7 @@ colors:
     blue:    '0xFC9867'
     magenta: '0xAB9DF2'
     cyan:    '0x78DCE8'
-    white:   '0xFCFCFA'
+    white:   '0xEFEFEF'
 
   # Bright colors
   bright:
@@ -40,4 +40,4 @@ colors:
     blue:    '0xFC9867'
     magenta: '0xAB9DF2'
     cyan:    '0x78DCE8'
-    white:   '0xFCFCFA'
+    white:   '0xEFEFEF'

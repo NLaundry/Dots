@@ -40,6 +40,10 @@ Theme:
 * Create a link for the binary file: ln -s /opt/firefox/firefox /usr/local/bin/firefox
 * Firefox with I3: popups must be set to open in floating mode
     * in config file: for_window [window_role="About"] floating enable
+#### Styling firefox
+* enable userChrome css:
+    * navigate to about:config and enable toolkit.legacyUserProfileCustomizations.stylesheets
+    * add the chrome file from config to ~/.mozilla/firefox/{userName}/chrome
 
 ### Audio on Manjaro
 * Install pulseaudio and pulse-audio via pacman
@@ -80,8 +84,8 @@ Theme:
 * grab config files from git repo
 * Current theme: molokai pro
 ### Music: mopidy + spotify + ncmpcpp
-* mopidy: sudo pacman -S mopidy
-* spotify plugin: yay mopidy-spotify
+* mopidy: sudo pip install mopidy 
+* spotify plugin: sudo pip install mopidy-spotify
 * ncmpcpp: sudo pacman -S ncmpcpp
 * configuring mopidy and spotify:
     * add username + password in ~/.config/mopidy/mopidy.conf
