@@ -361,9 +361,9 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 20
-gaps outer -5
-gaps bottom 30
+gaps inner 15
+gaps outer 0 
+gaps top 23
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>

@@ -20,7 +20,7 @@
 	border = #0B1218
 
 	foreground = ${xrdb:foreground}
-	background = #2D2A2E
+	background = #002D2A2E
 	black = ${xrdb:color0}
 	red = ${xrdb:color1}
 	green = ${xrdb:color2}
@@ -41,12 +41,13 @@
 	dpi-x = 0
 	dpi-y = 0
 
-	offset-y = 12
-
-	width = 98%
+	offset-y = 12 
+	width = 99%
 	height = 60
-
-	background = ${colors.background}
+    offset-x = 0.5%
+    radius = 15
+	
+    background = ${colors.background}
 	foreground = ${colors.foreground}
 
 	border-size = 0
@@ -66,16 +67,10 @@
 
 [bar/bottom]
 	inherit = bar/base
-	bottom = true
+	top = true
     
-    offset-x = 1%
-    radius = 15
-
 	modules-center = mpd 
     modules-left = i3 title 
-
-;cpu ram wifi title 
-
     modules-right = backlight pulseaudio battery wifi date
     
     [module/mpd]

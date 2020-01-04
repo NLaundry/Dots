@@ -77,7 +77,7 @@ Theme:
 ### Compton
 * set inactive windows to dim
 ### GTK theme
-* install equilux: git clone https://aur.archlinux.org/equilux-theme.git
+* installed both oomox for creating schemes + kde gtk configurator
 * apply Equilux in the gtk-3.0 settings.ini
 ### Alacritty
 * in .config/alacritty/alacritty.yml
