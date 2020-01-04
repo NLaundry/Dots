@@ -82,18 +82,6 @@ A collection of configuration files and instructions.
 ### useful programs
 * Zathura for pdf and epub viewing:
     * sudo pacman -S zathura zathura-pdf-mupdf
-Notes
------
-* npm EACCESS: try --unsafe-perm=true --allow-root
-* With ZSH and oh-my-zsh ensure to use antigen properly
-* Learn your package manager(s) and use them properly
-* Fix indentation in vimrc and clean out unnecessary pluginsA
-* Clean up coc.nvim setup
-* Organize zshrc better
-* Figure out why nvim didn't work with COC
-* Learn to redirect configurations to a single location for configs.
-* Convert vimwiki files to .md files
-* Try building up neovim from scratch with your existing vimrc.
 
 #### If you're unfortunate enough to use windows
 * Install the new windows terminal and ubuntu subsystem
