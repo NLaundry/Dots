@@ -13,7 +13,8 @@ antigen bundle common-aliases
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
-antigen theme bhilburn/powerlevel9k powerlevel9k
+#antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme romkatv/powerlevel10k
 antigen apply
 
 
@@ -31,10 +32,23 @@ source $ZSH/oh-my-zsh.sh
 #Aliases
 alias vim='nvim'
 alias vi='nvim'
-alias music='mopidy &; disown; ncmpcpp'
+alias music='mopidy &; disown; echo "Starting mpd"'
 alias player='ncmpcpp'
 alias slack='slackadaisical'
 alias disc='cordless'
+alias fb='fb-messenger-cli'
+alias facebook='fb-messenger-cli'
+alias dock='~/dock.sh'
+alias undock='~/undock.sh'
+alias yoink='git pull'
+alias yikes='git commit'
+alias yeet='git push'
+alias yank='git clone' 
+alias wassup='git status'
+alias yikes!='git commit'
+alias yoink!='git pull'
+alias yeet!='git push'
+alias yank!='git clone' 
 export TERMINAL='alacritty'
 #sets auto suggest accept to ctrl space
 bindkey '^ ' autosuggest-accept

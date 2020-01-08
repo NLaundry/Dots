@@ -54,6 +54,11 @@ Theme:
     * Uninstall manjaro-i3
     * install i3-gaps-rounded from the aur
     * set border_radius 20 in i3 config
+* Setting spacebar as the mod key
+    * install xcape via yay or pacman
+    * add the .Xmodmap file to the home directory
+    * edit the .profile file in the home directory
+
 ### Rofi setup
 * Install: *sudo pacman -S rofi
 
