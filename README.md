@@ -87,6 +87,18 @@ A collection of configuration files and instructions.
 ### useful programs
 * Zathura for pdf and epub viewing:
     * sudo pacman -S zathura zathura-pdf-mupdf
+* Icons in terminal + ls-icons
+    * $ git clone https://github.com/sebastiencs/icons-in-terminal.git
+    * run ./install.sh
+    * test with ./print_icons.sh
+    * git clone https://github.com/sebastiencs/ls-icons.git
+    * yay gperf, $ ./bootstrap
+    * $ export CFLAGS=-DNO_TRUE_COLOURS=1 # Execute this line _only_ if your terminal doesn't support true colours
+    * $ export CC=clang CXX=clang++
+    * $ ./configure --prefix=/opt/coreutils
+    * $ make
+    * $ make install
+    * $ /opt/coreutils/bin/lsinsall from extra
 
 #### If you're unfortunate enough to use windows
 * Install the new windows terminal and ubuntu subsystem
