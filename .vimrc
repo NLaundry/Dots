@@ -13,17 +13,21 @@
           \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
             autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
     endif
-
+    
     call plug#begin('~/.vim/plugged')
         
-        Plug 'vimwiki/vimwiki' "Create a repository of all my knowledge 
+        Plug 'vimwiki/vimwiki' "Create a repository of all my KNAWELedge 
         Plug 'junegunn/goyo.vim' "Turns off all visual junk for clean writing
         Plug 'scrooloose/nerdtree' "visual directory hiearchy
         Plug 'ap/vim-buftabline'
         Plug 'yggdroot/indentline' "Gives visual representation of indentation levels
         Plug 'tpope/vim-commentary' "adds a commenting verb
         Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
-        Plug 'machakann/vim-sandwich' "verb for wrapping a phrase in parens or quotes etc.
+        Plug 'machakann/vim-sandwich', "verb for wrapping a phrase in parens or quotes etc.
+        Plug 'Jiangmiao/auto-pairs', "Automatically pairs parens
+        Plug 'ludovicchabant/vim-gutentags', "creates Ctags for files
+        Plug 'majutsushi/tagbar' " Adds a bar to view all ctags
+        Plug 'airblade/vim-gitgutter' " Adds git information in the sidebar
         
         "== Syntax Highlight and Intellisense == {
             Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -32,6 +36,7 @@
             Plug 'othree/html5.vim' "For syntax highlighting on non native html components
             Plug 'MaskRay/ccls' "Language server for c, c++
             Plug 'justinmk/vim-syntax-extra' "LSP for Flex and sundry
+            Plug 'tpope/vim-classpath' "Class path stuff for java
         " }
 
         Plug 'NLaundry/vim-janah' "colour scheme
@@ -141,5 +146,9 @@
     map <C-n> :NERDTreeToggle<CR>
     let NERDTreeMinimalUI=1
     let g:NERDTreeQuitOnOpen=1 "NerdTree is kind've annoying if left open.
+" }
+
+" == TagBar settings and mappings == {
+    nmap <F8> :TagbarToggle<CR>
 " }
 

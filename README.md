@@ -42,14 +42,13 @@ A collection of configuration files and instructions.
     * install fonts: sudo pacman -S ttf-font-awesome
 * Polybar is configured to run on startup with i3
 * Polybar currently displays:
-    * CPU usage
-    * Ram usage
-    * Wifi with clickable connection manager
-    * Active window
     * I3 workspaces
-    * brightness with on scroll changes
+    * Active window
+    * MPD output
     * volume with pavucontrol (wanna change this cause its ugly)
+    * brightness with on scroll changes
     * Battery display
+    * Wifi with clickable connection manager
     * date
 ### Installing flameshot for screenshots
 * sudo pacman -S flameshot
